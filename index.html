@@ -32,9 +32,10 @@ window.onload = function() {
 	myRootRef.push('Hello World!');
 
 	window.addEventListener('shake', shakeEventDidOccur, false);
-	myRootRef.push('Hello World!');
+	
 	//define a custom method to fire when shake occurs.
 	function shakeEventDidOccur () {
+		myRootRef.push('Hello World!');
 	
 		//put your own code here etc.
 		if (confirm("Undo?")) {
