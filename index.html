@@ -31,7 +31,7 @@ window.onload = function() {
 	var myRootRef = new Firebase('https://lovers.firebaseio.com/');
 	myRootRef.push('Hello World!');
 
-	setInterval({console.log('interval')},100);
+	setInterval({},100);
 	window.addEventListener('shake', shakeEventDidOccur, false);
 	
 	//define a custom method to fire when shake occurs.
