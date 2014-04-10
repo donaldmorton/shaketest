@@ -15,6 +15,7 @@ body {
 }
 </style>
 <script type="text/javascript" src="shake.js"></script>
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.11/firebase.js'></script>
 </head>
 <body>
 
@@ -27,6 +28,8 @@ body {
 
 <script type="text/javascript">
 window.onload = function() {
+	var myRootRef = new Firebase('https://lovers.firebaseio.com/');
+	myRootRef.push('Hello World!');
 
 	window.addEventListener('shake', shakeEventDidOccur, false);
 	
